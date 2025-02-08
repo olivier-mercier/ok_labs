@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products & Services - OK Labs</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -14,19 +15,59 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products & Services</a></li>
                 <li><a href="pricing.html">Pricing & Plans</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="products">
-            <h2>Our Products & Services</h2>
-            <p>Details about products and services offered by OK Labs.</p>
+        <section id="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <div class="slide-content">
+                        <h2>Product 1</h2>
+                        <p>Description of Product 1.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/product2.jpg" alt="Product 2">
+                    <div class="slide-content">
+                        <h2>Product 2</h2>
+                        <p>Description of Product 2.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/product3.jpg" alt="Product 3">
+                    <div class="slide-content">
+                        <h2>Product 3</h2>
+                        <p>Description of Product 3.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </section>
     </main>
     <footer>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products & Services</a></li>
+                <li><a href="pricing.html">Pricing & Plans</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
         <p>&copy; 2023 OK Labs. All rights reserved.</p>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
